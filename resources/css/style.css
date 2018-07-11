@@ -1,0 +1,97 @@
+/*---------COLORS---------*/
+/* main color ->  #FFC107 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*---------------------------*/
+/*        BUTTONS            */
+/*---------------------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin: 10px 20px 0 0;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.7s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #FFC107;
+    color:#000;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid;
+    border-color: #FFC107;
+    color: #FFC107;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #b18500;
+    color:white;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    
+    border: 2px solid;
+    border-color: #b18500;
+    background-color: #b18500;
+    color:white;
+}
+
+/*---------------------------*/
+/* Hader                     */
+/*---------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hero3.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+h1 {
+    color:white;
+    margin: 0;
+    text-align: left;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
