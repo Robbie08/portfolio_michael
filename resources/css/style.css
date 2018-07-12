@@ -1,6 +1,12 @@
 /*---------COLORS---------*/
 /* main color ->  #FFC107 */
 
+
+/*-----------------------------------------------*/
+/* Basic Set up                                  */
+/*-----------------------------------------------*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +23,94 @@ html {
     
 }
 
+
+/*----------------------------------------------*/
+/* Reusable Code                                */
+/*----------------------------------------------*/
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-/*---------------------------*/
-/*        BUTTONS            */
-/*---------------------------*/
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 2%;
+}
+
+/*------- HEADINGS ----------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    color:white;
+    font-size: 240%;
+    margin: 0;
+    text-align: left;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/*-----LINE THAT FOLLOWS SECTION HEADER---*/
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:#FFC107;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*------- PARAGRAPH ---------*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*---------- ICONS ---------*/
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #FFC107;
+    margin-bottom: 10px;
+    
+}
+
+
+/*--------- BUTTONS ---------*/
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -65,9 +150,9 @@ html {
     color:white;
 }
 
-/*---------------------------*/
-/* Hader                     */
-/*---------------------------*/
+/*---------------------------------------------------*/
+/* HEADER                                            */
+/*---------------------------------------------------*/
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hero3.jpg);
     background-size:cover;
@@ -84,14 +169,46 @@ header {
     transform: translate(-50%, -50%)
 }
 
-
-h1 {
-    color:white;
-    margin: 0;
-    text-align: left;
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+.logo {
+    height: 130px;
+    width: auto;
+    float: left;
 }
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block; /*--side by side--*/
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+}
+
+
+/*---- when user hovers over links ------*/
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #FFC107;
+    
+}
+
+
+/*---------------------------------------------------*/
+/* ABOUT ME */
+/*---------------------------------------------------*/
+
+
