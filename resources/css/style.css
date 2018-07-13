@@ -164,21 +164,24 @@ header {
 .hero-text-box {
     position: absolute;
     width: 1140px;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 
 .logo {
-    height: 130px;
+    height: 190px;
     width: auto;
     float: left;
+    border: 2.5px solid #FFC107;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 90px;
 }
 
 .main-nav li {
@@ -198,6 +201,14 @@ header {
 }
 
 
+.call-to {
+    display: inline-block;
+    color:#FFC107;
+    margin-top: 85px;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 150%;
+}
 /*---- when user hovers over links ------*/
 
 .main-nav li a:hover,
