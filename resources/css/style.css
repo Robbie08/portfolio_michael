@@ -169,13 +169,22 @@ header {
     transform: translate(-50%, -50%)
 }
 
-.logo {
-    height: 190px;
+.logo-kw {
+    height:100px;
     width: auto;
     float: left;
+    margin-top: 50px;
+    
+}
+
+.logo {
+    display: inline-block;
+    height: 190px;
+    width: auto;
+    float:  center;
+    margin-left: 42%;
     border: 2.5px solid #FFC107;
     border-radius: 50%;
-    margin-top: 20px;
 }
 
 .main-nav {
@@ -217,9 +226,173 @@ header {
     
 }
 
+/*------------------------------------------------- */
+/* TESTIMONIALS*/
+/*--------------------------------------------------*/
 
-/*---------------------------------------------------*/
-/* ABOUT ME */
-/*---------------------------------------------------*/
+.section-testimonials {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-attachment: fixed;
+    background-size: cover; /*covers whole section with the backgroun BEST PRACTICE*/
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+cite {
+    font-size:90%;
+    margin-top: 25px;
+    display: block; /* breaks the line to not bunch up everything*/
+}
+cite img {
+    height: 450%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*------------------------------------------------- */
+/* FORM */
+/*--------------------------------------------------*/
+
+.section-contact {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.6)),to(rgba(0, 0, 0, 0.6))), url(img/sd_contact.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/sd_contact.jpg);
+    background-attachment: fixed;
+    background-size: cover; /*covers whole section with the backgroun BEST PRACTICE*/
+    color: #fff;
+}
+.section-contact p {
+    
+    
+    font-size: 130%;
+    word-spacing: 2px;
+    line-height: 50px;
+    
+}
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 200px;
+}
+
+*:focus {
+    outline:none;
+}
+
+/*------------------------------------------------- */
+/* FOOTER */
+/*--------------------------------------------------*/
+
+footer {
+    background-color: black; 
+    padding: 50px;
+    font-size: 80%;
+}
+
+footer img{
+    
+    height: 200px;
+    width: auto;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color:#888; 
+    -webkit-transition: color 0.2s; 
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+} 
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.ion-logo-facebook:hover {
+    color:#3b5998;
+}
+.ion-logo-twitter:hover {
+    color:#1da1f2;
+}
+.ion-logo-googleplus:hover {
+    color: #db4437;
+}
+.ion-logo-instagram:hover {
+    color: #ffdc7d;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top:20px;
+}
+
 
 
