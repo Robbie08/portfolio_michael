@@ -281,10 +281,10 @@ cite img {
 }
 .section-contact p {
     
-    
-    font-size: 130%;
+    margin: 0 25px;
+    font-size: 110%;
     word-spacing: 2px;
-    line-height: 50px;
+    line-height: 45px;
     
 }
 .contact-form {
@@ -316,25 +316,34 @@ textarea {
 
 footer {
     background-color: black; 
-    padding: 50px;
+    padding: 40px;
     font-size: 80%;
 }
+footer h3 {
+    
+    font-size: 180%;
+    color:white;
+    text-align: center;
+    margin-top:25px; 
 
+}
 footer img{
     
-    height: 200px;
+    height: 90px;
     width: auto;
+    margin-left: 20px;
 }
 
 .footer-nav {
     list-style: none;
     float: left;
-    
 }
 
 .social-links {
     list-style: none;
     float: right;
+    font-size: 180%;
+    margin-top: 20px;
 }
 
 .footer-nav li,
